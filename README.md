@@ -1,81 +1,130 @@
-OpenAI Translator Browser Extension And Desktop Application
------------------------------------------------------------
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://user-images.githubusercontent.com/1651790/224081217-86521beb-1b69-4071-b195-f2ce0bb33db7.png">
+  <img alt="NebulaGraph Data Intelligence Suite(ngdi)" src="https://user-images.githubusercontent.com/1651790/224081979-d3aa7867-94a6-4a85-a5d7-603e02360cee.png">
+</picture>
+<p align="center">
+    <br> English | <a href="README-CN.md">中文</a>
+</p>
+<p align="center">
+    <em>The translator that does more than just translation - powered by OpenAI.</em>
+</p>
 
-我开发了一个 Bob 的插件 [bob-plugin-openai-translator](https://github.com/yetone/bob-plugin-openai-translator) 使用 ChatGPT API 在 macOS 上进行全局划词翻译，
-但是由于很多用户并不是 macOS 用户，所以特此开发了一个浏览器插件方便非 macOS 用户使用 ChatGPT 进行划词翻译。
 
-# 既是浏览器插件也是跨平台桌面端应用！
+<p align="center">
+<a href="LICENSE" target="_blank">
+    <img alt="MIT License" src="https://img.shields.io/badge/license-MIT-blue?style=flat-square" />
+</a>
 
-* 注：桌面端应用暂不支持划词，但是即将支持，敬请期待！
+<!-- TypeScript Badge -->
+<img alt="TypeScript" src="https://img.shields.io/badge/-TypeScript-blue?style=flat-square&logo=typescript&logoColor=white" />
+
+<!-- Rust Badge -->
+<img alt="Rust" src="https://img.shields.io/badge/-Rust-orange?style=flat-square&logo=rust&logoColor=white" />
+
+<a href="https://github.com/yetone/openai-translator/releases" target="_blank">
+<img alt="Chrome" src="https://img.shields.io/badge/-Chrome-green?style=flat-square&logo=google-chrome&logoColor=white" />
+</a>
+
+<a href="https://github.com/yetone/openai-translator/releases" target="_blank">
+<img alt="Firefox" src="https://img.shields.io/badge/-Firefox-orange?style=flat-square&logo=firefox&logoColor=white" />
+</a>
+
+<a href="https://github.com/yetone/openai-translator/releases" target="_blank">
+<img alt="macOS" src="https://img.shields.io/badge/-macOS-black?style=flat-square&logo=apple&logoColor=white" />
+</a>
+
+<a href="https://github.com/yetone/openai-translator/releases" target="_blank">
+<img alt="Windows" src="https://img.shields.io/badge/-Windows-blue?style=flat-square&logo=windows&logoColor=white" />
+</a>
+
+<a href="https://github.com/yetone/openai-translator/releases" target="_blank">
+<img alt="Linux" src="https://img.shields.io/badge/-Linux-yellow?style=flat-square&logo=linux&logoColor=white" />
+</a>
+
+</p>
+
+# Why Yet another Translator
+
+I have developed a [Bob](https://bobtranslate.com/) [plugin](https://github.com/yetone/bob-plugin-openai-translator) that utilizes ChatGPT API to provide global word translation on macOS. However, since not all users have access to macOS to benefit from the plugin, I have created this project!
+
+# More than just a browser extension
+
+What began as a Chrome extension has now evolved into a multi-platform desktop app that I am currently developing.
+
+* Note: Word selection is not currently supported in the desktop application, but it will be supported soon. Please stay tuned!
 
 <img width="560" src="https://user-images.githubusercontent.com/1206493/223899374-ff386436-63b8-4618-afdd-fed2e6b48d56.png" />
 
+# More than just translation
 
-# 使用截图
+What began as a translation tool has now evolved to include surprisingly effective word polishing and summarization capabilities, ~~accidentally~~.
+
+
+# How to use
 
 <img width="800" src="https://user-images.githubusercontent.com/1206493/223200182-6a1d2a02-3fe0-4723-bdae-99d8b7212a33.gif" />
 
-# 特性
+# Features
 
-1. 支持三种翻译模式：翻译、润色、总结
-2. 支持 55 种语言的相互翻译、润色和总结功能
-3. 支持实时翻译、润色和总结，以最快的速度响应用户，让翻译、润色和总结的过程达到前所未有的流畅和顺滑
-4. 支持自定义翻译文本
-5. 支持一键复制
-6. 支持 TTS
-7. 有桌面端应用，全平台（Windows + macOS + Linux）支持！
+1. It offers three modes: translation, polishing, and summarization.
+2. Our tool allows for mutual translation, polishing, and summarization across 55 different languages.
+3. Streaming mode is supported!
+4. It allows users to customize their translation text.
+5. One-click copying
+6. Text-to-Speech (TTS)
+7. Available on all platforms (Windows, macOS, and Linux) for both browsers and Desktop
 
-# 桌面应用版安装方法
+# Installation(Desktop App)
 
-1. 去 [Release](https://github.com/yetone/openai-translator/releases) 页面下载你对应的操作系统的 zip 包
+1. Download zip package per OS from  [Release](https://github.com/yetone/openai-translator/releases)
 
-2. 下载完毕后解压 zip 包
+2. Unzip it
 
-3. 打开解压后的文件
+3. Open the App!
 
-* Windows 用户
+* Windows
 
-    Windows 用户双击解压出来的文件夹里的 `OpenAI Translator` 即可使用！
+    Double click `OpenAI Translator` will do the job!
     
-* macOS 用户
+* macOS
 
-    macOS 用户解压出来的是一个名字叫 `OpenAI Translator` 的应用，建议把解压出来的应用拖动到 `Applications` 目录中，macOS 用户第一次打开可能会遇到如下报错：
+    Drag the `OpenAI Translator` to `Applications`, in the initial run, you may encounter this:
 
     <img width="300" src="https://user-images.githubusercontent.com/1206493/223916804-45ce3f34-6a4a-4baf-a0c1-4ab5c54c521f.png" />
 
-    点击 `Cancel` 按钮，然后去 `Settings` -> `Privacy & Security` 页面，点击 `Open Anyway` 按钮，然后在弹出窗口里点击 `Open` 按钮即可，以后打开 `OpenAI Translator` 就再也不会有任何弹窗告警了 🎉
+    Click `Cancel` and then go to  `Settings` -> `Privacy & Security` and click `Open Anyway` and finally click `Open`, and that's it! 🎉
 
     <img width="500" src="https://user-images.githubusercontent.com/1206493/223916970-9c99f15e-cf61-4770-b92d-4a78f980bb26.png" />
 
     <img width="200" src="https://user-images.githubusercontent.com/1206493/223917449-ed1ac19f-c43d-4b13-9888-79ba46ceb862.png" />
 
-# 浏览器插件安装方法
+# Installation(Browser Extension)
 
-由于此插件还在 Chrome Store 审核中，所以现在需要手动下载和安装，敬请谅解。
+Due to the extension still being reviewed by the Chrome Store, it currently requires manual download and installation. We apologize for any inconvenience this may cause.
 
-1. 去 Release 页面下载 [openai-translator-chrome-extension-*.zip](https://github.com/yetone/openai-translator/releases) 文件
-2. 解压缩下载后的 openai-translator-chrome-extension-*.zip 文件
-3. 打开 Chrome 的 Extension 页面
+1. Download from the Release page for files with the name: [openai-translator-chrome-extension-*.zip](https://github.com/yetone/openai-translator/releases)
+2. Unzip the openai-translator-chrome-extension-*.zip file
+3. Go to the Extension page of Chrome:
 
 <img width="600" src="https://user-images.githubusercontent.com/1206493/222926817-414b91ea-e90f-43f5-9fb3-e9b170b40ce8.png" />
 
-4. 在 Extension 页面右上角打开 Developer mode，然后点击左上角的 Load unpacked 按钮，选择刚刚解压缩的目录即可安装完毕！
+4. To install, navigate to the Extension page and enable Developer mode in the top-right corner. Then, click the Load unpacked button in the top-left corner and select the unzipped directory to complete the installation.
 
-    **注意：如果安装了旧版本，请务必先删除旧版本！**
+    **Please note: If you have installed a previous version, it must be removed prior to installation.**
 
 <img width="600" src="https://user-images.githubusercontent.com/1206493/223045238-22c9b79b-205d-4f6b-a147-cc7cf4149c83.png" />
 
-5. 去 [OpenAI](https://platform.openai.com/account/api-keys) 获取你的 API KEY
+5. Get your [OpenAI](https://platform.openai.com/account/api-keys) API Keys
 
 <img width="600" src="https://user-images.githubusercontent.com/1206493/223043946-0e7486ca-94d7-4324-a4f2-f62b9a3d527d.png" />
 
-6. 把 API KEY 填入此插件配置界面的 API KEY 输入框中
+6. Fill in the API Key:
 
 <img width="600" src="https://user-images.githubusercontent.com/1206493/222958165-159719b4-28a5-44a4-b700-567786df7f03.png" />
 
-7. 刷新浏览器页面，即可享受丝滑般的划词翻译体验 🎉
+7. Refresh the page in the browser to enjoy the smooth translation experience 🎉!
 
-# 请作者喝一杯咖啡
+# Buy me a coffee
 
 <div align="center">
 <img height="360" src="https://user-images.githubusercontent.com/1206493/220753437-90e4039c-d95f-4b6a-9a08-b3d6de13211f.png" />

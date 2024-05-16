@@ -9,7 +9,6 @@ npm-error.log
 *.json-e
 *.js-e
 
-.vscode
 .idea
 .eslintcache
 .yarn
@@ -17,3 +16,7 @@ npm-error.log
 /test-results/
 /playwright-report/
 /playwright/.cache/
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat
+.gitignore
